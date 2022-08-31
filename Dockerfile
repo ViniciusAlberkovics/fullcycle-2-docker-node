@@ -2,6 +2,10 @@ FROM node:16
 
 WORKDIR /usr/app
 
+COPY ./app /usr/app
+
+RUN npm install
+
 RUN apt-get update && apt-get install -y wget
 
 ENV DOCKERIZE_VERSION v0.6.1
