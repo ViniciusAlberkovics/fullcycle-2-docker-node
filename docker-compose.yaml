@@ -22,6 +22,7 @@ services:
       - node-network
     volumes:
       - ./app:/usr/app
+      - /usr/app/node_modules
     tty: true
     depends_on:
       - db
